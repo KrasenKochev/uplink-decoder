@@ -13,7 +13,15 @@ test('should correctly decode uplink with firstPayload', () => {
       } 
     };
     var result = decodeUplink(inputOne);
-    expect(result).toEqual(expectedOutput);
+    try{
+      expect(result).toEqual(expectedOutput);
+    }catch(error){
+      console.log(`Test failed, expected and actual result does not match for input: ${inputOne.bytes}`)
+      console.log(`Expected output:`, expectedOutput)
+      console.log(`Actual output:`, result)
+      throw error;
+    }
+    
   });
   
   test('should correctly decode uplink with secondPayload', () => {
@@ -30,5 +38,12 @@ test('should correctly decode uplink with firstPayload', () => {
       } 
     };
     var result = decodeUplink(inputTwo);
-    expect(result).toEqual(expectedOutput);
+    try{
+      expect(result).toEqual(expectedOutput);
+    }catch(error){
+      console.log(`Test failed, expected and actual result does not match for input: ${inputTwo.bytes}`)
+      console.log(`Expected output:`, expectedOutput)
+      console.log(`Actual output:`, result)
+      throw error;
+    }
   });
