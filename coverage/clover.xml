@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1732533626983" clover="3.2.0">
-  <project timestamp="1732533626983" name="All files">
+<coverage generated="1732536793528" clover="3.2.0">
+  <project timestamp="1732536793528" name="All files">
     <metrics statements="123" coveredstatements="48" conditionals="32" coveredconditionals="4" methods="7" coveredmethods="7" elements="162" coveredelements="59" complexity="0" loc="123" ncloc="123" packages="1" files="1" classes="1"/>
     <file name="uplinkFunctionToTest.ts" path="/home/kochev/Documents/uplink-decoder/src/uplinkFunctionToTest.ts">
       <metrics statements="123" coveredstatements="48" conditionals="32" coveredconditionals="4" methods="7" coveredmethods="7"/>
